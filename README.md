@@ -20,6 +20,7 @@ Create a snapshot of the current GTFS files for Madison Metro:
 ```
 cd pipelines
 bauplan run -p snapshot_routes
+bauplan run -p current_routes
 bauplan query "SELECT unix_timestamp, source FROM route_snapshots"
 ```
 
